@@ -1,0 +1,63 @@
+.sidebar {
+	background-color: $secondaryWhite;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	min-width: 275px;
+	max-width: 325px;
+	box-shadow: 4px 0px 19px -10px rgba(0, 0, 0, 0.75);
+	.sb-header {
+		height: 10vh;
+		min-height: 100px;
+		margin-top: 1.4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.circle {
+			width: 75px;
+			height: 75px;
+			border-radius: 50px;
+			background: $brandingGradient;
+		}
+		.logo {
+			font-family: $logoFont;
+			font-size: 2.4rem;
+			margin-left: 1rem;
+		}
+	}
+	.sb-body {
+		margin-top: 2.5rem;
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		.sb-nav-item {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			padding: 1rem 3rem;
+			font-size: 1.4rem;
+			line-height: 2.4rem;
+			font-family: $primaryFont;
+			color: $secondaryBlack;
+			transition: 0.3s ease all;
+			cursor: pointer;
+			opacity: 0.7;
+			span {
+				margin-left: 2rem;
+			}
+			&:hover {
+				background: $brandingSecondary;
+				border-left: 5px $branding solid;
+				color: $secondaryWhite;
+				font-weight: 600;
+				opacity: 1;
+			}
+		}
+		.selected {
+			border-left: 8px $branding solid;
+			color: $mainBlack;
+			font-weight: 700;
+			opacity: 1;
+		}
+	}
+}

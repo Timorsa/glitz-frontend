@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+// fonts
+$logoFont: 'Pacifico', cursive;
+$primaryFont: 'Poppins', sans-serif;
+$secondaryFont: 'Open Sans', sans-serif;
+
+// colors
+$branding: #693eff;
+$brandingSecondary: #ac97f8;
+$brandingGradient: linear-gradient(
+	90deg,
+	rgba(131, 58, 180, 1) 0%,
+	rgba(172, 151, 248, 1) 100%
+);
+$mainWhite: #fff;
+$secondaryWhite: #f5f5fb;
+$mainBlack: #18191a;
+$secondaryBlack: #242526;

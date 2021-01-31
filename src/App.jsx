@@ -1,5 +1,14 @@
+import './styles/main.scss';
+import Sidebar from './components/sidebar';
+
 function App() {
-	return <div className='App'></div>;
+	return (
+		<div>
+			<div className='app-container'>
+				<Sidebar />
+			</div>
+		</div>
+	);
 }
 
 export default App;
