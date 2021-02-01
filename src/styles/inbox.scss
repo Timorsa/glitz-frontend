@@ -3,6 +3,7 @@
 
     }
     .inbox-list{
+        overflow-y: scroll;
         .inbox-list-item{
             border-radius: 1.5rem;
             background-color: $mainWhite;
@@ -45,8 +46,15 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    div:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                    }
                     .noty-dot{
-                       
+                       height:10px;
+                       width: 10px;
+                       border-radius: 5px;
+                       background-color: $branding;
                     }
                     .time{
                         font-family: $secondaryFont;
