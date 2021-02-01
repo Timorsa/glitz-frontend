@@ -3,6 +3,7 @@ import {
 	MdHome as Home,
 	MdPlace as Discover,
 	MdToday as Calendar,
+	MdChat as Inbox,
 	MdAccountCircle as User,
 	MdSettings as Settings,
 } from 'react-icons/md';
@@ -22,6 +23,9 @@ const Sidebar = () => {
 				</li>
 				<li className='sb-nav-item'>
 					<Calendar size={25} /> <span>Calendar</span>
+				</li>
+				<li className='sb-nav-item'>
+					<Inbox size={25} /> <span>Inbox</span>
 				</li>
 				<li className='sb-nav-item'>
 					<User size={25} /> <span>Friends</span>
