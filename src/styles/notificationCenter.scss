@@ -1,3 +1,101 @@
 .notification-center {
-	background-color: red;
+	background-color: $secondaryWhite;
+	font-family: $primaryFont;
+	min-width: 350px;
+	box-shadow: 4px 0px 19px -10px rgba(0, 0, 0, 0.5);
+	transition: .3s ease box-shadow;
+	display: flex;
+	flex-direction: column;
+
+	&:hover{
+		box-shadow: -4px 0px 19px -10px rgba(0, 0, 0, 0.25);
+	}
+	.nc-header{
+		display: flex;
+		padding: 2rem  0;
+		min-height: 100px;
+		align-items: center;
+		justify-content: center;
+		.avatar{
+			border-radius:50px;
+			overflow: hidden;
+			padding: .2rem;
+			background: $brandingGradient;
+			cursor: pointer;
+			img{
+				border-radius:50px;
+				width: 75px;
+				height: 75px;
+				object-fit: cover;
+
+			}
+		}
+		.name{
+			margin: 0 1rem;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			font-weight: 600;
+			cursor: pointer;
+		}
+		svg{
+			cursor: pointer;
+		}
+	}
+
+	.nc-body{
+		height: calc(100vh - 500px);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		section{
+			.devider{
+				display: block;
+				width: 250px;
+				margin: .5rem 1rem;
+				height: 1px;
+				background-color: lightgray;
+			}
+			h3{
+				margin-left: 1rem;
+			}
+			
+		}
+	}
+
+	.nc-footer{
+		width:  300px;
+		height: 300px;
+		margin: 1rem auto ;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url('https://image.freepik.com/free-vector/beautiful-illustration-mother-nature_52683-56366.jpg') ;
+		background-position: center;
+		background-size: cover;
+		opacity: 1;
+		color: #FFD700;
+		font-family: $primaryFont;
+		font-weight: 700;
+		font-size: 2rem;
+		text-align: center;
+		text-transform: uppercase;
+		box-shadow: -2px 0px 10px 2px $brandingSecondary;
+
+		span{
+			width: 80%;
+			text-shadow: 2px 2px $mainBlack;
+
+		}
+		.black-bg{
+			background-color: $mainBlack;
+			color: $secondaryWhite;
+			font-size: 1rem;
+			padding: 0 0.4rem;
+		}
+		
+	}
 }
+
+

@@ -1,6 +1,7 @@
 import './styles/main.scss';
-import Sidebar from './components/sidebar';
 import Header from './components/header';
+import Sidebar from './components/sidebar';
+import AppContent from './components/appContent';
 import NotificationCenter from './components/notificationCenter';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 			<div className='app-container'>
 				<Sidebar />
 				<Header />
+				<AppContent/>
 				<NotificationCenter />
 			</div>
 		</div>
