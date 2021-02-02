@@ -5,7 +5,7 @@ const AppContent = () => {
     return (
         <div className='app-content'>
            {/* <Calendar/> */}
-           <Inbox/>
+            {/* <Inbox/> */}
         </div>
     )
 }
