@@ -26,5 +26,9 @@
 		&:hover {
 			box-shadow: 4px 0px 19px -10px rgba(0, 0, 0, 0.25);
 		}
+
+		&:focus-within {
+			box-shadow: 4px 0px 19px -10px rgba(0, 0, 0, 0.25);
+		}
 	}
 }
