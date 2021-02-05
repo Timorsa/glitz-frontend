@@ -12,6 +12,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		cursor: pointer;
 		.circle {
 			width: 75px;
 			height: 75px;
@@ -47,7 +48,6 @@
 		
 			&:hover {
 				background: $brandingSecondary;
-				border-left: 8px $branding solid;
 				color: $secondaryWhite;
 				font-weight: 600;
 				opacity: 1;
