@@ -1,0 +1,123 @@
+.settings {
+	margin-right: 3vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	h2 {
+		text-align: center;
+		font-family: $primaryFont;
+		text-transform: uppercase;
+		margin: 2rem 0 3rem;
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	.settings-list {
+		width: 45%;
+		height: 85vh;
+		list-style: none;
+		.settings-option {
+			margin: 1.4rem 5rem;
+			font-size: 1.4rem;
+			font-family: $secondaryFont;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 1.4rem 3rem;
+			border-radius: 0.5rem;
+			background: $mainWhite;
+			box-shadow: 2px 4px 21px 6px #ac97f84f;
+			transition: 0.4s ease all;
+			cursor: pointer;
+			span {
+				margin-left: 1rem;
+			}
+			&:hover {
+				box-shadow: none;
+				background: $brandingSecondary;
+				font-weight: 600;
+				color: $mainWhite;
+			}
+		}
+		.selected {
+			box-shadow: none;
+			background: $branding;
+			font-weight: 600;
+			color: $mainWhite;
+			cursor: not-allowed;
+			&:hover {
+				background: $branding;
+				font-weight: 600;
+				color: $mainWhite;
+			}
+		}
+	}
+	.devider {
+		width: 0.5px;
+		height: 80vh;
+		background-color: rgba(0, 0, 0, 0.301);
+	}
+	.settings-content {
+		width: 45%;
+		height: 85vh;
+	}
+	.credit-form {
+		margin: 1rem 3rem;
+		display: flex;
+		flex-direction: column;
+		input {
+			padding: 0.8rem 1rem;
+			margin: 0.5rem 2rem;
+			font-size: 1.2rem;
+			border-radius: 0.4rem;
+			border: none;
+			color: $branding;
+			border: 0.4px solid $branding;
+			font-family: $secondaryFont;
+			background-color: transparent;
+			outline: none;
+			transition: 0.4s ease all;
+			&:focus,
+			&:hover {
+				border: none;
+				background-color: $mainWhite;
+				box-shadow: 2px 4px 21px 6px #ac97f84f;
+			}
+		}
+		.mm-yy {
+			display: flex;
+			margin: 1rem 2rem;
+			align-items: center;
+			justify-content: space-around;
+			input {
+				margin: 0;
+				width: 40%;
+			}
+		}
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		.credit-form-btn {
+			margin: 1.5rem 2rem;
+			background: transparent;
+			border-radius: 0.6rem;
+			font-family: $secondaryFont;
+			padding: 1rem;
+			border: 0.4px solid $branding;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 1.2rem;
+			color: $branding;
+			transition: 0.4s ease all;
+			cursor: pointer;
+			&:focus,
+			&:hover {
+				border: none;
+				background-color: $branding;
+				color: $mainWhite;
+				box-shadow: 2px 4px 21px 6px #ac97f84f;
+			}
+		}
+	}
+}
