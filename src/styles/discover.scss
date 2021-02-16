@@ -1,0 +1,22 @@
+.discover {
+	.head-segment {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		h2 {
+			margin-left: 0.2rem;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			font-family: $secondaryFont;
+		}
+	}
+	.map-section {
+		.map-controller {
+		}
+		.map {
+		}
+	}
+	.content {
+	}
+}

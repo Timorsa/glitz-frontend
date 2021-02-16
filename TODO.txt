@@ -1,0 +1,14 @@
+
+
+get geo-location from browser -
+
+https://stackoverflow.com/questions/60021654/how-to-enable-geolocation-on-chrome-when-running-a-project-with-create-react-app
+
+
+create map and map costume styles 
+
+https://www.youtube.com/watch?v=Pf7g32CwX_s&t=1182s
+
+
+
+
