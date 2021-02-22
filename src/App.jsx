@@ -1,19 +1,20 @@
+import { BrowserRouter } from 'react-router-dom';
 import './styles/main.scss';
 import Header from './components/header';
 import Sidebar from './components/sidebar';
-import AppContent from './components/appContent';
+import Router from './components/appContent';
 import NotificationCenter from './components/notificationCenter';
 
 function App() {
 	return (
-		<div>
+		<BrowserRouter>
 			<div className='app-container'>
 				<Sidebar />
 				<Header />
-				<AppContent/>
+				<Router />
 				<NotificationCenter />
 			</div>
-		</div>
+		</BrowserRouter>
 	);
 }
 

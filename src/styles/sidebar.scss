@@ -30,6 +30,9 @@
 		list-style: none;
 		display: flex;
 		flex-direction: column;
+		a {
+			text-decoration: none;
+		}
 		.sb-nav-item {
 			width: 100%;
 			display: flex;
@@ -45,7 +48,7 @@
 			span {
 				margin-left: 2rem;
 			}
-		
+
 			&:hover {
 				background: $brandingSecondary;
 				color: $secondaryWhite;
